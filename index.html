@@ -13,8 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
         }
         
         .container {
@@ -54,14 +53,20 @@
             100% { opacity: 1; }
         }
         
-        #rose-img {
-            width: 300px;
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            margin: 20px auto;
-            animation: float 5s infinite ease-in-out;
+        .rose-images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
         
+        .rose-images img {
+            width: 150px;
+            margin: 0 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: float 5s infinite ease-in-out;
+        }
+
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
@@ -107,7 +112,11 @@
         <p>Let every petal of the rose whisper the depth of my love for you. 🌹🌹🌹</p>
         <p>With each delicate bloom, may our love blossom forever. 🌺🌺🌺</p>
         <p>I love you more than words can express. 💖💖💖</p>
-        <img src="https://static.vecteezy.com/system/resources/previews/030/678/982/large_2x/red-roses-high-quality-4k-ultra-hd-hdr-free-photo.jpg" alt="Rose Image" id="rose-img">
+        <div class="rose-images">
+            <img src="https://static.vecteezy.com/system/resources/previews/030/678/982/large_2x/red-roses-high-quality-4k-ultra-hd-hdr-free-photo.jpg" alt="Rose Image">
+            <img src="https://c.ndtvimg.com/2022-02/b8l24mjo_happy-rose-day-pics-rose-day-images-rose-day-wishes_625x300_07_February_22.jpg?im=Resize=(1230,900)" alt="Rose Image">
+            <img src="https://imgeng.jagran.com/images/2020/feb/roseday1580994260669.jpg" alt="Rose Imagew">
+        </div>
         <p id="love-message">With all my heart and forever yours, Darshil</p>
         <p id="love-message">You are the most beautiful rose in my life. I cherish every moment with you. 🌹💖</p>
         <p class="signature">With love and affection, Darshil</p>
